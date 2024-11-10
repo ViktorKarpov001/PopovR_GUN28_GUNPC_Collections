@@ -44,6 +44,7 @@
             }
         }
 
+
         private class DictionaryTask
         {
             private readonly Dictionary<string, double> _studentGrades;
@@ -80,6 +81,7 @@
                     else
                     {
                         Console.WriteLine($"Студента с именем {checkName} не существует.");
+                        continue;
                     }
 
                     Console.WriteLine("Введите '-exit' для выхода из задачи.");
@@ -104,6 +106,7 @@
                 public Node Next;
                 public Node Previous;
 
+
                 public Node(string data)
                 {
                     Data = data;
@@ -118,6 +121,7 @@
                 Console.WriteLine("Введите 6 элементов для двусвязного списка:");
                 for (int i = 0; i < 6; i++)
                 {
+
                     Console.Write($"Элемент {i + 1}: ");
                     string data = Console.ReadLine();
                     AddToEnd(data);
@@ -125,6 +129,7 @@
 
                 Console.WriteLine("Список в прямом порядке:");
                 PrintForward();
+
                 Console.WriteLine("Список в обратном порядке:");
                 PrintBackward();
 
@@ -139,6 +144,7 @@
                     }
                 }
             }
+
 
             private void AddToEnd(string data)
             {
